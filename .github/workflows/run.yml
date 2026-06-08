@@ -1,4 +1,4 @@
-name: CI
+name: KADAI4_GCD_CI
 
 on:
   push:
