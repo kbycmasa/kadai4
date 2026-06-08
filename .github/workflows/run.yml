@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  io_test:
+    name: Use Linux commands
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Permission Setting
+        run: chmod +x gcd.sh test_gcd.sh
+
+      # Runs a set of commands using the runners shell
+      - name: Test Run
+        run: ./test_GCD.sh
