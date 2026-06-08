@@ -3,6 +3,7 @@
 a=$1
 b=$2
 
+
 if [ $# -ne 2 ]; then
     echo "error: Two arguments are required."
     exit 1
