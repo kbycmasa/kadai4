@@ -20,4 +20,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Test Run
-        run: ./test_GCD.sh
+        run: ~/kadai4/test_GCD.sh
